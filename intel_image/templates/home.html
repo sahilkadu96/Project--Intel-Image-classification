@@ -1,0 +1,9 @@
+{% extends 'base.html'  %}
+{% block content %}
+<div>
+    <form method="post" enctype="multipart/form-data", action="{{url_for('predict_class')}}">
+        <input name="img" type="file">
+        <input type="submit">
+    </form>
+</div>
+{% endblock %}
